@@ -64,13 +64,19 @@ $ minikube service list
 ```
 
 ### Check consul UI
+```
 $ minikube service hedgehog-consul-ui
+```
 
 ### Deploy Custom Applications
+```
 $ kubectl create -f 04-yaml-connect-envoy
+```
 
 ### Forward the application port
+```
 $ kubectl port-forward dashboard 9002:9002
+```
 
 ### Open page counter app
 http://localhost:9002
